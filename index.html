@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu Trombones Automatique</title>
+    <link rel="stylesheet" href="/amuse bouche/paper/style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Jeu Trombones Automatique</h1>
+        
+        <div class="stats">
+            <p id="totalProduced">Total trombones produits : 0</p>
+            <p>Nombre de trombones : <span id="paperclips">0</span></p>
+            <p>Argent : <span id="money">100</span>$</p>
+            <p>Machines : <span id="machines">0</span></p>
+            <p>Machines Automatiques : <span id="autoMachines">0</span></p>
+        </div>
+
+
+    
+        <div class="actions">
+            <button id="produce" class="action-button">Produire un trombone</button>
+            <button id="sell" class="action-button">Vendre un trombone </button>
+            <button id="buyMachine" class="action-button">Acheter une machine (50$)</button>
+            <button id="buyAutoMachine" class="action-button">Acheter une machine automatique (200$)</button>
+            <button id="autoSell" class="action-button">Vente automatique (Activer)</button>
+            <button id="increaseSellSpeed" class="action-button">Augmenter la vitesse de vente</button>
+        </div>
+
+        <div class="console">
+            <h2>Console de Commande</h2>
+            <div id="cmdConsole" class="cmd-console"></div>
+        </div>
+
+
+        <!-- Ajouté dans le HTML -->
+        <div id="newFeature" style="display: none;">
+            <button id="specialButton">Activer Fonction Spéciale</button>
+        </div>
+    </div>
+
+    <script src="/amuse bouche/paper/script.js"></script>
+</body>
+</html>
